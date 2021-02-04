@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <h1 class='title'>Todo App</h1>
+
+    <!-- Task group part -->
+    <div class="task-group">
+
+        <h2 class="task-group-title">Task Groups</h2>
+
+        <ul class="task-group-list">
+            <li class="active-group group-name" >Studies</li>
+            <li class="group-name">Work</li>
+            <li class="group-name">Shopping</li>
+        </ul>
+
+        <form action="">
+            <input type="text" 
+            class="new group" 
+            placeholder="new task group">
+            
+            <button class="btn create">
+                +
+            </button>
+        </form>
+    </div>
+
+    <!-- Todos Part -->
+    <div class="todos">
+
+        <div class="todos-header">
+            <h2 class="todos-header-title">Studies</h2>
+            <p class="todos-header-count">3 todos remaining</p>
+        </div>
+
+        <div class="todos-body">
+            <div class="tasks">
+                <!-- all tasks -->
+                <!-- task 1 -->
+                <div class="task">
+                    <input type="checkbox" id="task-1">
+                    <label for="task-1">
+                        <span class="custom-checkbox">
+                        </span>
+                        For task1
+                    </label>
+                </div>
+
+                <!-- task 2 -->
+                <div class="task">
+                    <input type="checkbox" id="task-2">
+                    <label for="task-2">
+                        <span class="custom-checkbox">
+                        </span>
+                        For task2
+                    </label>
+                </div>
+
+                <!-- task 3 -->
+                <div class="task">
+                    <input type="checkbox" id="task-3">
+                    <label for="task-3">
+                        <span class="custom-checkbox">
+                        </span>
+                        For task3
+                    </label>
+                </div>
+                <!-- tasks over -->
+            </div>
+
+            <!-- create new mini task -->
+            <div class="new-tasks">
+                <form action="">
+                    <input type="text" 
+                    class="new todo" 
+                    placeholder="new todo">
+                    
+                    <button class="btn create">
+                        +
+                    </button>
+                </form>
+            </div>
+
+            <!-- delete buttons -->
+            <div class="delete-tasks">
+                <button class="btn delete">
+                    Clear completed todos
+                </button>
+                <button class="btn delete">
+                    Delete all
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
